@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Generic SPA</title>
+  <link rel="stylesheet" href="css/bundle.min.css">
+  <!-- <link rel="stylesheet" href="css/main.min.css"> -->
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Nova+Mono" rel="stylesheet">
+</head>
+
+<body>
+
+  <div id="mainDiv">
+    <!-- Header -->
+    <div id="headerDiv">SinglePage App</div>
+
+    <!-- Navigation -->
+    <div id="navDiv">
+      <ul>
+        <li><a class="active" href="#" id="homeLink" title="Home" onclick="showHome();return false;">Home</a></li>
+        <li><a href="#" id="page2Link" title="Page2" onclick="showPage2();return false;">Page 2</a></li>
+        <li><a href="#" id="galleryLink" title="Gallery" onclick="showGallery();return false">Gallery</a></li>
+        <li><a href="#" id="mapLink" title= "Map" onclick="showMap();return false">Map</a></li>
+        <li class="floatRight"><a href="#" id="infoLink" title="Info" onclick="showInfo();return false">Info</a></li>
+      </ul>
+    </div>
+
+    <!-- Home -->
+    <div id="homeDiv" class="contentDiv">
+      <h3>Lorem ipsum</h3>
+      Welcome to the generic website. This is a single-page application. It features a gallery and a map.<br><br>
+
+      <img id="firstPicture" src="img/pic1.png" alt="picture">
+
+      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<br><br>
+
+      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<br><br>
+
+      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.<br><br>
+    </div>
+
+    <!-- Page 2 -->
+    <div id="page2Div" class="contentDiv">
+      <h3>Page 2</h3>
+      Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Praesent adipiscing. Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus. Vestibulum volutpat pretium libero.<br><br>
+
+      Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero.<br><br>
+
+      Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt.<br><br>
+
+      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.<br><br>
+
+      Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<br><br>
+    </div>
+
+    <!-- Gallery -->
+    <div id="galleryDiv" class="contentDiv">
+      <h3>Gallery</h3>
+      <!-- Slider main container -->
+      <div class="swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img src="img/img1.jpg" width="70%" height="70%" alt=""></div>
+              <div class="swiper-slide"><img src="img/img2.jpg" width="70%" height="70%"  alt=""></div>
+              <div class="swiper-slide"><img src="img/img3.jpg" width="70%" height="70%"  alt=""></div>
+              <div class="swiper-slide"><img src="img/img4.jpg" width="70%" height="70%"  alt=""></div>
+              <div class="swiper-slide"><img src="img/img5.jpg" width="70%" height="70%"  alt=""></div>
+          </div>
+          <!-- Navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <!-- Pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- Scrollbar -->
+          <div class="swiper-scrollbar"></div>
+      </div>
+    </div>
+
+    <!-- Map -->
+    <div id="mapDiv" class="contentDiv">
+      <h3>Map</h3>
+      <div id="myMap"></div>
+    </div>
+
+    <!-- Info -->
+    <div id="infoDiv" class="contentDiv">
+      <h3>Info</h3>
+      This is a simple single-page application.<br>
+      Made with <a href="https://github.com/jquery/jquery">jQuery</a>, <a href="https://github.com/nolimits4web/Swiper/releases/tag/v3.4.2">Swiper</a> and <a href="https://github.com/Leaflet/Leaflet/releases/tag/v1.1.0">Leaflet</a>.<br>
+      Check out the <a href="https://github.com/mcodebox/generic_page">repository on GitHub</a>.<br>
+    </div>
+
+    <!-- Footer -->
+    <div id="footerDiv">
+      <a href="https://github.com/mcodebox/generic_page">Source on GitHub</a>
+    </div>
+  </div>
+
+  <script src="js/bundle.min.js" charset="utf-8"></script>
+  <!-- <script src="js/main.min.js" charset="utf-8"></script> -->
+  <script src="js/main.js" charset="utf-8"></script>
+</body>
+
+</html>
